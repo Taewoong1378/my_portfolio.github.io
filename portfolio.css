@@ -1,0 +1,113 @@
+@charset "utf-8";
+@import url(https://cdn.rawgit.com/theeluwin/NotoSansKR-Hestia/master/stylesheets/NotoSansKR-Hestia.css);
+
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, button, abbr, acronym, address, code, del, 
+dfn, em, img, strong, sub, sup, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, 
+td, hr{margin:0;padding:0;font-size:100%;box-sizing: border-box;}
+body{height:100%;min-height:100%;font-family:'Noto Sans Korean','Malgun Gothic','맑은고딕','돋움',dotum, sans-serif;font-size:16px;color:#737373;line-height:1.5;background:url(./images/content_bg4.png) repeat;}
+h1, h2, h3, h4, h5, h6 {font-weight:normal}
+ol, ul, li {list-style:none}
+table {width:100%; border-collapse:collapse;border-spacing:0}
+form, fieldset, iframe {display:block;border:0}
+img, button {border:0 none;vertical-align:top;}
+hr {height:0; display:none}
+i, em, address{font-style:normal}
+label, button{cursor:pointer}
+blockquote, q {quotes:none}
+caption, legend {overflow:hidden;visibility:hidden;position:absolute;width:0;height:0;padding:0;margin:0;font-size:0;text-indent:-100%;white-space:nowrap;z-index:-1}
+header, footer, section, article, aside, nav, hgroup, details, menu, figure, figcaption {display:block;box-sizing: border-box;}
+input, textarea, select, button {font-family:'Noto Sans Korean','Malgun Gothic','맑은고딕','돋움',dotum, sans-serif;font-size:16px;color:#919090;line-height:1.5;letter-spacing:0;vertical-align:middle; border:none;}
+input, textarea {margin:0;padding:0;  background:none; box-sizing:border-box;}
+textarea {resize:none}
+a {color:#919090;text-decoration:none}
+a:link, a:visited {text-decoration:none}
+a:hover {text-decoration:none}
+.blind{display: none;overflow: hidden;position: absolute;width: 0;height: 0;padding: 0;margin: 0; font-size: 0;line-height: 0; text-indent: -9999em;visibility: hidden;outline: none;z-index: -1;}
+html,body{overflow:hidden;height:100%;}
+
+#wrap {
+    width: 100%;
+    height: 100%;
+    padding-right: 180px;
+}
+#wrap header {
+    background: url(./images/menu_bg1.png) repeat-y; z-index: 11;
+    width: 180px;
+    height: 100%;
+    position: fixed;
+    right: 0;
+    top: 0;
+}
+#wrap header nav {
+    width: 100%;
+    height: 100%;
+}
+#wrap header nav ul {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+#wrap header nav ul li {
+    margin-left: 50px;
+    position: relative;
+}
+#wrap header nav ul li:after {
+    content: "";
+    width: 8px;
+    height: 8px;
+    position: absolute;
+    display: block;
+    border-radius: 50%;
+    background-color: #fff;
+    top: 18px;
+    left: -13px;
+}
+#wrap header nav ul li a {
+    line-height: 40px;
+    color: #fff;
+}
+#wrap header nav ul li:hover a,
+#wrap header nav ul li.on a {
+    color:#ed3140;
+}
+#wrap header nav ul li:hover:after,
+#wrap header nav ul li.on:after {
+    background:#ed3140;
+}
+footer {
+    width: 180px;
+    padding: 0 20px 30px 20px;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    font-size: 11px;
+    color: #7e7e7e;
+    z-index: 12;
+    text-align: center;
+}
+footer address {
+    padding-bottom: 15px;
+    /* margin-bottom: 15px; */
+}
+footer a {
+    position: absolute;
+    top: -31px;    
+    transition: 0.4s;
+}
+.fab {
+    width: 30px;
+    height: 30px;
+}
+#container {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+    z-index: 4;
+}
+section .content h2 {
+    opacity: 0;
+}
