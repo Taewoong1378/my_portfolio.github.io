@@ -234,7 +234,7 @@ footer a:nth-of-type(3):hover .fab {
     font-weight: normal;
 }
 .skill-progress .item {
-    margin-bottom: 20px;
+    margin: 20px;
 }
 .skill-progress .item p {
     overflow: hidden;
@@ -277,77 +277,52 @@ footer a:nth-of-type(3):hover .fab {
 .skill-progress .item:nth-of-type(5) .progress-level {
     animation-delay: 0.8
 }
-#menu2 .text_box .inner_content p {
-    position: relative;
-    padding-right: 260px;
-    text-align: justify;
-}
-#menu2 .text_box .inner_content p:nth-of-type(1):before {
-    content: "";
-    display: block;
-    width: 200px;
-    height: 250px;
-    position: absolute;
-    right: 100px;
-    top: -15px;
-    background: url(./images/htmlcss.png) no-repeat right top;
-    background-size: 150px;
-}
-#menu2 .text_box .inner_content p:nth-of-type(2):before {
-    content: "";
-    display: block;
-    width: 200px;
-    height: 250px;
-    position: absolute;
-    right: 130px;
-    top: 15px;
-    background: url(./images/javascript.png) no-repeat right top;
-    background-size: 90px;
-}
-#menu2 .text_box .inner_content p:nth-of-type(3):before {
-    content: "";
-    display: block;
-    width: 200px;
-    height: 250px;
-    position: absolute;
-    right: 130px;
-    top: 25px;
-    background: url(./images/nodejs.png) no-repeat right top;
-    background-size: 80px;
-}
-#menu2 .text_box .inner_content p:nth-of-type(4):before {
-    content: "";
-    display: block;
-    width: 200px;
-    height: 250px;
-    position: absolute;
-    right: 125px;
-    top: 25px;
-    background: url(./images/php.png) no-repeat right top;
-    background-size: 90px;
-}
-#menu2 .text_box .inner_content p:nth-of-type(5):before {
-    content: "";
-    display: block;
-    width: 200px;
-    height: 250px;
-    position: absolute;
-    right: 120px;
-    top: 15px;
-    background: url(./images/java.png) no-repeat right top;
-    background-size: 100px;
-}
-#menu2 .inner_content span {
-    font-weight: 600;
-    color: #ed3140;
-}
 #menu2 .inner_content p {
-    margin-left: 23px;
+    margin-left: 37px;
     margin-bottom: 40px;
 }
 #menu2 .inner_content p:last-child {
     margin-bottom: 70px;
 }
+
+
+.skill-progress .item span {
+    position: relative;
+}
+.icon span {
+    /* position: absolute를 주는 순간 어떤 요소건 무조건 inline-block 요소로 변경됨.*/
+    position: absolute;
+    background-color: #000;
+    color: #fff;
+    width: 300px;
+    text-align: center;
+    padding: 10px;
+    border-radius: 5px;
+
+    /* 요거 매우 헷갈림 주의하기 top, left 값 주기 */
+    transform: translatex(-50%);
+    opacity: 0;
+    transition: 0.5s;
+    visibility: hidden;
+    /* visibility: hidden;이 아니라 display:block;을 해버리면 얘가 position:absolute로 인해 inline-block으로 속성이 변경됐는데 다시 block 속성으로 바뀌게 됨 */
+}
+
+/* .icon span:after {
+    content:'';
+    position: absolute;
+    background-color: #000;
+    width: 10px;
+    height: 10px;
+    transform: rotate(45deg) translateX(-50%);
+    bottom: -5px;
+    left: 50%;
+} */
+.skill-progress .item:hover span {
+    opacity: 1;
+    visibility: visible;
+}
+
+
 .node_img {
     margin-bottom: 20px;
 }
@@ -462,12 +437,6 @@ footer a:nth-of-type(3):hover .fab {
     top: 50px;
     background-size: 100%;
 }
-#container #menu3 p {
-    text-align: justify;
-}
-#container #menu4 p {
-    text-align: justify;
-}
 #container #menu4 .conbox:before {
     background: url(./images/wish.png) no-repeat;
     width: 200px;
@@ -475,15 +444,6 @@ footer a:nth-of-type(3):hover .fab {
     right: -10px;
     top: 150px;
     background-size: 100%;
-}
-#container #menu4 .text_box {
-    width: 100%;
-}
-#container #menu4 .text_box h4 {
-    margin-bottom: 70px;
-}
-#container #menu4 .text_box h4:nth-of-type(2) {
-    text-align: right;
 }
 #container .content h2 {
     opacity: 0;
