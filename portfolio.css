@@ -1,6 +1,6 @@
 @charset "utf-8";
 @import url(https://cdn.rawgit.com/theeluwin/NotoSansKR-Hestia/master/stylesheets/NotoSansKR-Hestia.css);
-
+@import url('https://fonts.googleapis.com/css2?family=Alegreya:wght@500&family=Cinzel&family=Lobster&family=Nanum+Myeongjo&display=swap');
 html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, button, abbr, acronym, address, code, del, 
 dfn, em, img, strong, sub, sup, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, 
 td, hr{margin:0;padding:0;font-size:100%;box-sizing: border-box;}
@@ -47,6 +47,14 @@ header .logo_box img {
     position: fixed;
     right: 0;
     top: 0;
+}
+#wrap header div {
+    color: rgba(255, 255, 255, 0.815);
+    font-size: 10px;
+    position: absolute;
+    left: 42px;
+    top: 110px;
+    cursor: pointer;
 }
 #wrap header nav {
     width: 100%;
@@ -136,9 +144,77 @@ footer a:nth-of-type(3):hover .fab {
     position: absolute;
     transition: 0.8s;
 }
+.pargrph_tit {
+    margin-bottom: 50px;
+    font-size: 24px;
+    color: #fff;
+    position: relative;
+    font-family: 'Alegreya', serif;
+}
+.pargrph_tit:after {
+    content: "";
+    display: block;
+    width: 30px;
+    height: 8px;
+    background: #ed3140;
+    position: absolute;
+    left: 0;
+    bottom: -13px;
+}
+#myface {
+    width: 100px;
+    height: 120px;
+    margin-bottom: 15px;
+}
+.text_box {
+    font-family: 'Nanum Myeongjo', serif;
+    color: #d6d4d4;
+    opacity: 0;
+    transition: 3s;
+}
+.content.this .text_box {
+    opacity: 1;
+}
+.content .text_box h4 {
+    font-size: 40px;
+    color: #d6d4d4;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+.pargrph:nth-of-type(1) .text_box:nth-of-type(1) p:nth-of-type(1) {
+    margin-bottom: 10px;
+}
+.pargrph:nth-of-type(1) .text_box:nth-of-type(1) p:nth-of-type(2) {
+    margin-bottom: 70px;
+}
+.pargrph:nth-of-type(1) .text_box:nth-of-type(2) p {
+    margin-bottom: 20px;
+}
+.photo {
+    margin-bottom: 70px;
+}
+.photo img {
+    width: 220px;
+    height: 280px;
+    margin: 0 10px 0 0;
+}
+.node_img {
+    margin-bottom: 20px;
+}
+.node_img img {
+    width: 300px;
+    height: 500px;
+    margin: 0 10px 0 0;
+}
+#menu3 .text_box:nth-of-type(1) p {
+    margin-bottom: 70px;
+}
 #container .content.this {
     width: 100%;
     left: 0 !important;
+    height: 100%;
+    overflow: hidden;
+    overflow-y: auto;
 }
 #container .content.prev {
     width: 100%;
@@ -147,6 +223,10 @@ footer a:nth-of-type(3):hover .fab {
 #container .content.next {
     width: 100%;
     left: 100% !important;
+}
+#container .content.this .conbox {
+    max-width: 1100px;
+    margin: 0 auto;
 }
 #container .content.this:before,
 #container .content.this:after,
@@ -244,15 +324,15 @@ footer a:nth-of-type(3):hover .fab {
 }
 #container .content.this h2 {
     height: auto;
-    padding: 30px 0 20px 50px;
+    padding: 20px 0 20px 50px;
     color: #000;
     position: relative;
     background-color: #fff;
     font-size: 28px;
-    font-weight: 400;
     opacity: 1;
     transition: 0.6s;
     transition-delay: 1.2s;
+    font-family: 'Alegreya', serif;
 }
 #container .content.this h2:after {
     content: "";

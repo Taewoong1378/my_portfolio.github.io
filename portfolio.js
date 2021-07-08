@@ -10,6 +10,10 @@ $(function(){
 		$("#" + id).nextAll().addClass("next");    
 	});
 	// 로고 클릭 시
+	$(".main_page").on("click", function(){
+		$("nav li").removeClass("on");
+		$(".content").removeClass("prev this next");
+	});
 	$(".logo_box").on("click", function(){
 		$("nav li").removeClass("on");
 		$(".content").removeClass("prev this next");
