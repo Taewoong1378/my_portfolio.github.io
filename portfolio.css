@@ -53,6 +53,9 @@ html,body{overflow:hidden;height:100%;}
     margin-left: 50px;
     position: relative;
 }
+#wrap header nav ul li a {
+    transition: 0.5s;
+}
 #wrap header nav ul li:after {
     content: "";
     width: 8px;
@@ -63,6 +66,7 @@ html,body{overflow:hidden;height:100%;}
     background-color: #fff;
     top: 18px;
     left: -13px;
+    transition: 0.5s;
 }
 #wrap header nav ul li a {
     line-height: 40px;
@@ -87,18 +91,23 @@ footer {
     z-index: 12;
     text-align: center;
 }
-footer address {
-    padding-bottom: 15px;
-    /* margin-bottom: 15px; */
+footer .fab {
+    font-size: 20px;
+    padding-top: 10px;
+    margin: 5px;
+    transition: 0.5s;
 }
-footer a {
-    position: absolute;
-    top: -31px;    
-    transition: 0.4s;
+footer a:hover .fab {
+    transform: rotateY(360deg);
 }
-.fab {
-    width: 30px;
-    height: 30px;
+footer a:nth-of-type(1):hover .fab {
+    color: white;
+}
+footer a:nth-of-type(2):hover .fab {
+    color: #e4405f;
+}
+footer a:nth-of-type(3):hover .fab {
+    color: #3b5999;
 }
 #container {
     width: 100%;
