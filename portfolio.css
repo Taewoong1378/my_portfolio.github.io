@@ -30,6 +30,16 @@ html,body{overflow:hidden;height:100%;}
     height: 100%;
     padding-right: 180px;
 }
+header .logo_box {
+    position: absolute;
+    right: 13px;
+    top: 75px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+header .logo_box img {
+    width: 150px;
+}
 #wrap header {
     background: url(./images/menu_bg1.png) repeat-y; z-index: 11;
     width: 180px;
@@ -91,6 +101,9 @@ footer {
     z-index: 12;
     text-align: center;
 }
+footer address {
+    padding-bottom: 15px;
+}
 footer .fab {
     font-size: 20px;
     padding-top: 10px;
@@ -113,10 +126,147 @@ footer a:nth-of-type(3):hover .fab {
     width: 100%;
     height: 100%;
     position: relative;
-    max-width: 1200px;
+    /* max-width: 1200px; */
     margin: 0 auto;
     z-index: 4;
 }
-section .content h2 {
+#container .content {
+    width: 25%;
+    height: 100%;
+    position: absolute;
+    transition: 0.8s;
+}
+#container .content.this {
+    width: 100%;
+    left: 0 !important;
+}
+#container .content.prev {
+    width: 100%;
+    left: -100% !important;
+}
+#container .content.next {
+    width: 100%;
+    left: 100% !important;
+}
+#container .content.this:before,
+#container .content.this:after,
+#container .content.this .conbox:before {
     opacity: 0;
+}
+#container #menu1 {
+    left: 0%;
+    background: url(./images/content_bg1.png) repeat;
+}
+#container #menu2 {
+    left: 25%;
+    background: url(./images/content_bg2.png) repeat;
+}
+#container #menu3 {
+    left: 50%;
+    background: url(./images/content_bg3.png) repeat;
+}
+#container #menu4 {
+    left: 75%;
+    background: url(./images/content_bg4.png) repeat;
+}
+#container .content:before,
+#container .content:after {
+    content: "";
+    display: block;
+    position: absolute;
+}
+#conatiner .content:before {
+    width: 1px;
+    height: 100%;
+    background-color: #000;
+    left: 0;
+    top: 0;
+    z-index: 4;
+}
+#container .content:after {
+    left: 30px;
+    top: 180px;
+    font-size: 25px;
+    font-weight: 700;
+    color: rgba(255, 255, 255, 0.76);
+}
+#container #menu1:after {
+    content: "ABOUT";
+}
+#container #menu2:after {
+    content: "SKILL";
+}
+#container #menu3:after {
+    content: "PROJECT";
+}
+#container #menu4:after {
+    content: "WISH";
+}
+#container .content .conbox:before {
+    content: "";
+    display: block;
+    position: absolute;
+}
+#container #menu1 .conbox:before {
+    background: url(./images/businessman.png) no-repeat;
+    width: 200px;
+    height: 200px;
+    right: -10px;
+    top: 130px;
+    background-size: 100%;
+}
+#container #menu2 .conbox:before {
+    background: url(./images/stack.png) no-repeat;
+    width: 300px;
+    height: 200px;
+    right: -10px;
+    top: 300px;
+    background-size: 100%;
+}
+#container #menu3 .conbox:before {
+    background: url(./images/project.png) no-repeat;
+    width: 200px;
+    height: 200px;
+    right: -10px;
+    top: 50px;
+    background-size: 100%;
+}
+#container #menu4 .conbox:before {
+    background: url(./images/wish.png) no-repeat;
+    width: 200px;
+    height: 200px;
+    right: -10px;
+    top: 150px;
+    background-size: 100%;
+}
+#container .content h2 {
+    opacity: 0;
+}
+#container .content.this h2 {
+    height: auto;
+    padding: 30px 0 20px 50px;
+    color: #000;
+    position: relative;
+    background-color: #fff;
+    font-size: 28px;
+    font-weight: 400;
+    opacity: 1;
+    transition: 0.6s;
+    transition-delay: 1.2s;
+}
+#container .content.this h2:after {
+    content: "";
+    width: 100%;
+    height: 8px;
+    background-color: #ed3140;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+#container .content .conbox .content_wrap {
+    opacity: 0;
+}
+#container .content.this .conbox .content_wrap {
+    padding: 30px 50px 50px 50px;
+    opacity: 1;
 }
