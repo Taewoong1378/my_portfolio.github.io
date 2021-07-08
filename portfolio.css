@@ -181,13 +181,13 @@ footer a:nth-of-type(3):hover .fab {
     font-weight: 700;
     margin-bottom: 20px;
 }
-.pargrph:nth-of-type(1) .text_box:nth-of-type(1) p:nth-of-type(1) {
+#menu1 .text_box:nth-of-type(1) p:nth-of-type(1) {
     margin-bottom: 10px;
 }
-.pargrph:nth-of-type(1) .text_box:nth-of-type(1) p:nth-of-type(2) {
+#menu1 .text_box:nth-of-type(1) p:nth-of-type(2) {
     margin-bottom: 70px;
 }
-.pargrph:nth-of-type(1) .text_box:nth-of-type(2) p {
+#menu1 .text_box:nth-of-type(2) p {
     margin-bottom: 20px;
 }
 .photo {
@@ -197,6 +197,77 @@ footer a:nth-of-type(3):hover .fab {
     width: 220px;
     height: 280px;
     margin: 0 10px 0 0;
+}
+.skill-progress {
+    width: 500px;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+    border-radius: 7px;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.08);
+    position: relative;
+    margin-bottom: 30px;
+}
+.skill-progress h1 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 40px;
+    font-weight: normal;
+}
+.skill-progress .item {
+    margin: 20px;
+}
+.skill-progress .item p {
+    overflow: hidden;
+}
+.item p span:nth-child(1) {
+    float: left;
+}
+.item p span:nth-child(2) {
+    float: right;
+}
+.progress {
+    border: 1px solid #6cd4c4;
+    padding: 5px;
+    border-radius: 3px;
+}
+.content.this .progress-level {
+    height: 10px;
+    background: linear-gradient(to right, crimson, gold);
+    animation: ani 1s;
+    
+    animation-fill-mode: both;
+}
+@keyframes ani {
+    0% {
+        width: 0;
+    }
+}
+.skill-progress .item:nth-of-type(1) .progress-level {
+    animation-delay: 0s;
+}
+.skill-progress .item:nth-of-type(2) .progress-level {
+    animation-delay: 0.2s;
+}
+.skill-progress .item:nth-of-type(3) .progress-level {
+    animation-delay: 0.4s;
+}
+.skill-progress .item:nth-of-type(4) .progress-level {
+    animation-delay: 0.6s;
+}
+.skill-progress .item:nth-of-type(5) .progress-level {
+    animation-delay: 0.8
+}
+#menu2 .inner_content span {
+    font-weight: 600;
+    color: #ed3140;
+}
+#menu2 .inner_content p {
+    margin-left: 37px;
+    margin-bottom: 40px;
+}
+#menu2 .inner_content p:last-child {
+    margin-bottom: 70px;
 }
 .node_img {
     margin-bottom: 20px;
