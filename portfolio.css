@@ -184,11 +184,15 @@ footer a:nth-of-type(3):hover .fab {
     transition: 3s;
     position: relative;
 }
+#menu1 .text_box:nth-of-type(2) p {
+    text-align: justify;
+}
 #menu1 .text_box:nth-of-type(3) p {
     position: absolute;
     width: 100%;
     padding-right: 260px;
     padding-bottom: 100px;
+    text-align: justify;
 }
 
 #menu1 .text_box:nth-of-type(3):before {
@@ -201,6 +205,25 @@ footer a:nth-of-type(3):hover .fab {
     top: -10px;
     background: url(./images/using_computer.jpg.png) no-repeat right top;
     background-size: 200px;
+}
+#menu1 .text_box:nth-of-type(4) p {
+    position: absolute;
+    width: 100%;
+    padding-right: 260px;
+    padding-bottom: 100px;
+    text-align: justify;
+}
+
+#menu1 .text_box:nth-of-type(4):before {
+    content: "";
+    display: block;
+    width: 250px;
+    height: 300px;
+    position: absolute;
+    right: 0;
+    top: -10px;
+    background: url(./images/collaboration.png) no-repeat right top;
+    background-size: 250px;
 }
 
 .content.this .text_box {
@@ -372,8 +395,23 @@ footer a:nth-of-type(3):hover .fab {
     margin: 0 10px 0 0;
 }
 #menu3 .text_box p {
+    font-size: 20px;
     padding-right: 50px;
+    padding-top: 15px;
     margin-bottom: 70px;
+    line-height: 2.0em;
+}
+#menu3 .text_box p a {
+    text-decoration: underline;
+    color: #d6d4d4;
+}
+#menu3 .text_box a img {
+    width: 40px;
+    height: 40px;
+}
+#menu3 .text_box h5 {
+    font-size: 30px;
+    margin-bottom: 40px;
 }
 #container .content.this {
     width: 100%;
