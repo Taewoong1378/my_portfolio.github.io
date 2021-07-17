@@ -118,7 +118,17 @@ footer .fab {
     margin: 5px;
     transition: 0.5s;
 }
+footer .notion {
+    width: 25px;
+    height: 25px;
+    margin-top: 12px;
+    margin-left: 2px;
+    transition: 0.5s;
+}
 footer a:hover .fab {
+    transform: rotateY(360deg);
+}
+footer a:hover .notion {
     transform: rotateY(360deg);
 }
 footer a:nth-of-type(1):hover .fab {
@@ -342,9 +352,9 @@ footer a:nth-of-type(3):hover .fab {
     background: url(./images/java.png) no-repeat right top;
     background-size: 100px;
 }
-#menu2 .inner_content span {
-    font-weight: 600;
+#menu2 .inner_content p span {
     color: #ed3140;
+    font-weight: bold;
 }
 #menu2 .inner_content p {
     margin-left: 23px;
