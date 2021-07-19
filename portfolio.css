@@ -181,7 +181,6 @@ footer a:nth-of-type(3):hover .fab {
     font-family: 'Nanum Myeongjo', serif;
     color: #d6d4d4;
     opacity: 0;
-    transition: 3s;
     position: relative;
 }
 #menu1 .text_box:nth-of-type(2) p {
