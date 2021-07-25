@@ -185,6 +185,7 @@ footer a:nth-of-type(3):hover .fab {
 }
 #menu1 .text_box:nth-of-type(2) p {
     text-align: justify;
+    padding-right: 80px;
 }
 #menu1 .text_box:nth-of-type(3) p {
     position: absolute;
@@ -520,6 +521,50 @@ footer a:nth-of-type(3):hover .fab {
 #container #menu4 p {
     text-align: justify;
 }
+#container #menu4 .items {
+    text-align: center;
+}
+#container #menu4 .item {
+    display: inline-block;
+    width: 450px;
+    height: 280px;
+    position: relative;
+    margin-bottom: 60px;
+}
+#container #menu4 .item:nth-of-type(1) {
+    margin-right: 40px;
+}
+
+#container #menu4 .caption {
+    width: 470px;
+    height: 290px;
+    background-color: rgba(0, 0, 0, 0.596);
+    position: absolute;
+    top: 0;
+    left: 0;
+    color:#fff;
+    padding: 20px;
+    box-sizing: border-box;
+    padding-top: 40px;
+    opacity: 0;
+    transition: 0.5s;
+}
+#container #menu4 .item:hover .caption {
+    opacity: 1;
+}
+#container #menu4 .item .caption span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+#container #menu4 .item img {
+    width: 470px;
+    height: 290px;
+}
+#container #menu4 .item:nth-of-type(2) img {
+    right: 0;
+}
 #container #menu4 .conbox:before {
     background: url(./images/wish.png) no-repeat;
     width: 200px;
@@ -533,6 +578,12 @@ footer a:nth-of-type(3):hover .fab {
 }
 #container #menu4 .text_box h4 {
     margin-bottom: 70px;
+}
+#container #menu4 .text_box p {
+    font-size: 17px;
+    line-height: 2.0em;
+    padding-left: 24px;
+    padding-right: 5px;
 }
 #container #menu4 .text_box h4:nth-of-type(2) {
     text-align: right;
