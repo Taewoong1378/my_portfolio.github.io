@@ -401,6 +401,13 @@ footer a:nth-of-type(3):hover .fab {
     width: 620px;
     height: 350px;
 }
+.third_prg {
+    margin-bottom: 20px;
+}
+.third_prg img {
+    width: 620px;
+    height: 350px;
+}
 #menu3 .text_box p {
     font-size: 20px;
     padding-right: 50px;
