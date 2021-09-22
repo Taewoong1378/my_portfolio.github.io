@@ -1,3 +1,4 @@
 {
-    "editor.mouseWheelZoom": true
+    "editor.mouseWheelZoom": true,
+    "liveServer.settings.port": 5503
 }
